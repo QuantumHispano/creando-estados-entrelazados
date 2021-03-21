@@ -13,3 +13,5 @@ A continuación instrucciones generales de cómo ejecutar cada uno de los cuader
 - **Qiskit**: Tener una instalación de Python con Qiskit instalado, y librerías generales (numpy, etc.) utiilizadas en el cuaderno de Qiski.
 - **Yao**: Tener Julia +1.5 instalado, posterior a ello, ejecutar: `using Pkg; Pkg.activate("."); Pkg.instantiate()` para poder instalar todas las dependencias especificadas en los archivos `.toml`
 - **Q#**: Tener el lenguaje Q# instalado, el cual es parte del Quantum Development Kit (QDK) de Microsoft.
+
+En el caso de los cuadernos de Qiskit y Q#, se tiene estructurado un cuaderno interactivo de formato `.ipynb`, mientras que para Yao tenemos lo mismo pero adicionalmente un `.jl` ejecutable desde [Pluto.jl](https://github.com/fonsp/Pluto.jl) para mejor rendimiento e interactividad.
