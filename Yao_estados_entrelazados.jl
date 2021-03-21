@@ -64,7 +64,7 @@ Exploremos la construcción anterior paso a paso. Comenzamos creando un registro
 product_state(2, 00) 
 
 # ╔═╡ d41d2276-89d6-11eb-1247-93f396229b78
-product_state(2, 01) |> state
+product_state(2, 00) |> state
 
 # ╔═╡ 419c7374-89d7-11eb-39a9-a1aa2e9302a2
 circuit |> plot
@@ -126,7 +126,7 @@ md"Y graficamos:"
 product_state(2, 00) |> 
     put(2, 1 => H) |> 
     control(2, 1, 2 => X) |> 
-    (x -> measure(x; nshots=100000)) |>
+    (x -> measure(x; nshots=10000000)) |>
     plotmeasure
 
 # ╔═╡ Cell order:
